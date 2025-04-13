@@ -94,7 +94,7 @@ func handleDeploy(c *gin.Context) {
 		}
 	}()
 
-	bucketName := "zenith123"
+	bucketName := "your_bucket_name"
 	objectName := repoName + ".zip"
 
 	if err := UploadFileToB2(zipPath, bucketName, objectName); err != nil {
@@ -190,7 +190,7 @@ func ZipFolder(source, target string) error {
 }
 
 func UploadFileToB2(filePath, bucket, objectName string) error {
-	endpoint := "s3.us-east-005.backblazeb2.com"
+	endpoint := "your_endpoint"
 	accessKey := os.Getenv("B2_ACCESS_KEY")
 	secretKey := os.Getenv("B2_SECRET_KEY")
 
@@ -200,7 +200,7 @@ func UploadFileToB2(filePath, bucket, objectName string) error {
 	client, err := minio.New(endpoint, &minio.Options{
 		Creds:  credentials.NewStaticV4(accessKey, secretKey, ""),
 		Secure: true,
-		Region: "us-west-004",
+		Region: "your_endpoint_region",
 	})
 	if err != nil {
 		return fmt.Errorf("failed to create B2 client: %w", err)
