@@ -63,22 +63,22 @@ func downloadFile(filepath string, url string) error {
 	// Create a new MinIO client
 	endpoint := os.Getenv("B2_ENDPOINT")
 	if endpoint == "" {
-		endpoint = "s3.us-east-005.backblazeb2.com"
+		endpoint = "your_endpoint"
 	}
 
 	accessKey := os.Getenv("B2_ACCESS_KEY")
 	if accessKey == "" {
-		accessKey = "005ff9aebf852400000000004"
+		accessKey = "your_access_key"
 	}
 
 	secretKey := os.Getenv("B2_SECRET_KEY")
 	if secretKey == "" {
-		secretKey = "K005GzdanQoMUebGClFflSWdIZv12Z8"
+		secretKey = "your_secret_key"
 	}
 
 	bucketName := os.Getenv("B2_BUCKET")
 	if bucketName == "" {
-		bucketName = "zenith123"
+		bucketName = "your_bucket_name"
 	}
 
 	// Extract object name from URL
@@ -404,7 +404,7 @@ func startNgrok(port string) (string, error) {
 	// Get authtoken from environment variable or use the one in the config
 	authToken := os.Getenv("NGROK_AUTHTOKEN")
 	if authToken == "" {
-		authToken = "2vdfrBydWU0hvRB5hlWaZ7rOlR4_6cNSw3G8juUcRmLkYjXnV"
+		authToken = "your_ngrok_authtoken"
 	}
 
 	// Start ngrok with proper parameters
