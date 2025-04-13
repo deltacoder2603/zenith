@@ -1,5 +1,7 @@
 # 🚀 Zenith
 
+🎥 [Watch the Demo on YouTube]([https://www.youtube.com/watch?v=i2BsJIzo4go])
+
 ## 💫 What is Zenith?
 
 Zenith transforms the deployment experience by enabling instant web application deployment from GitHub repositories with a single click. No more complex configurations or deployment headaches—just push your code and go live in seconds.
