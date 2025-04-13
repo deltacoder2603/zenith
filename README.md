@@ -1,6 +1,6 @@
 # 🚀 Zenith
 
-🎥 [Watch the Demo on YouTube]((https://www.youtube.com/watch?v=i2BsJIzo4go))
+🎥 [Watch the Demo on YouTube](https://www.youtube.com/watch?v=i2BsJIzo4go)
 
 ## 💫 What is Zenith?
 
