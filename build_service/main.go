@@ -325,7 +325,7 @@ func ZipFolder(source, target string) error {
 }
 
 func getMinioClient() *minio.Client {
-	endpoint := getEnvOrDefault("B2_ENDPOINT", "s3.us-east-005.backblazeb2.com")
+	endpoint := getEnvOrDefault("B2_ENDPOINT", "your_endpoint")
 	accessKey := os.Getenv("B2_ACCESS_KEY")
 	secretKey := os.Getenv("B2_SECRET_KEY")
 
